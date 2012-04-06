@@ -13,10 +13,18 @@ Include file:
 
 The wilson object is now bound to the parent scope. Most of the time this will be _window.wilson_
 
+```javascript
+var objWithScore,
+    obj = {
+      name : 'Product 1',
+      positive : 1337,
+      negative : 123
+    };
+
+objWithScore = wilson.getScore(obj);
+```
+
 ### Methods
 * **getScore()**
 * **getSorted()**
 
-```javascript
-
-```
