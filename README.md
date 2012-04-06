@@ -40,8 +40,8 @@ objWithScore = wilson.getScore(obj);
 ```
 
 ## API
-### getScore([obj, array])
+### score([obj, array])
 Get the Wilson Score of an object or an array. Returns that object or array with score added.
-### getSorted(array)
+### sort(array)
 Sort an array based on it's Wilson Score. If objects in array don't already have the score, it will be calculated and added.
 

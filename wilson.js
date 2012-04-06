@@ -56,7 +56,7 @@
   context.wilson = {
     
     // Get the lower bounds score of an object or array
-    getScore : function () {
+    score : function () {
       var arg = arguments[0],
           func = function (){};
       
@@ -69,9 +69,9 @@
     },
     
     // Return a sorted array based on the lower bounds
-    getSorted : function () {
+    sort : function () {
       var arg = arguments[0],
-          arr = this.getScore(arg);
+          arr = this.score(arg);
       
       //
       return _sort(arr);
