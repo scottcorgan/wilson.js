@@ -10,3 +10,13 @@ Include file:
 <pre>
 &lt;script src='wilson.js'&gt;&lt;/script&gt;
 </pre>
+
+The wilson object is now bound to the parent scope. Most of the time this will be _window.wilson_
+
+### Methods
+* **getScore()**
+* **getSorted()**
+
+```javascript
+
+```
