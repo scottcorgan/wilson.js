@@ -1,4 +1,4 @@
-var wilson = (function(contenxt){
+(function(contenxt){
   
   // wilson equation
   var calculate = function(p, n){
@@ -24,8 +24,8 @@ var wilson = (function(contenxt){
     
   }
   
-  // return 
-  return {
+  // set wilson into the current context
+  context.wilson = {
     
     getLowerBound : function(obj){
       return calcObj(obj);
