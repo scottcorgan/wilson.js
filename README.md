@@ -22,6 +22,17 @@ var objWithScore,
     };
 
 objWithScore = wilson.getScore(obj);
+
+/*
+    Output:
+    
+    {
+        name : 'Product 1',
+        positive : 1337,
+        negative : 123,
+        score: 0.9003915795238371  // this is the score
+    }
+*/
 ```
 
 ### Methods
