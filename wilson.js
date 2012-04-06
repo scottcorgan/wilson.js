@@ -42,7 +42,7 @@
   
   // Used to sort our array based on the lower pounds
   var compare = function(a,b) {
-    if (a.lb < b.lb) return 11;
+    if (a.lb < b.lb) return 1;
     if (a.lb > b.lb) return -1;
     return 0;
   }
@@ -55,12 +55,7 @@
   // Set wilson into the current context
   context.wilson = {
     
-    //
-    getLowerBound : function(obj){
-      return calcObj(obj);
-    },
-    
-    //
+    // Get the lower bounds score of an object or array
     getScore : function(){
       var arg = arguments[0],
           func = function(){};
@@ -69,10 +64,11 @@
       arg.length && (func = calcArr); // array of objects
       !arg.length && (func = calcObj); // object
       
+      //
       return func(arg);
     },
     
-    //
+    // Return a sorted array based on the lower bounds
     getSorted : function(){
       var arg = arguments[0],
           arr = this.getScore(arg);
@@ -80,7 +76,6 @@
       //
       return sort(arr);
     }
-    
   }
 
 })(this);
