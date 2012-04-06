@@ -7,7 +7,7 @@
     "rank",
     "votes"
   ],
-  "version": "0.1.5",
+  "version": "0.1.6",
   "preferGlobal": false,
   "homepage": "http://scottcorgan.github.com/wilson.js",
   "author": "Scott Corgan <scott@sevenly.org> (http://sevenly.org)",
