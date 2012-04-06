@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Wilson.js by scottcorgan</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Wilson.js</h1>
+<p>Wrapper for the Wilson Score Equation to calculate rank based on positive and negative impressions.</p>
+        <p class="view"><a href="https://github.com/scottcorgan/wilson.js">View the Project on GitHub <small>scottcorgan/wilson.js</small></a></p>
+        <ul>
+          <li><a href="https://github.com/scottcorgan/wilson.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/scottcorgan/wilson.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/scottcorgan/wilson.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>wilson.js</h1>
+
+<p>Wrapper for the Wilson Score Equation to calculate rank based on positive and negative impressions.</p>
+
+<p>Based on <a href="http://d.pr/ka8D">How Not To Sort By Average Rating</a>
+(Lower bound of Wilson score confidence interval for a Bernoulli parameter)</p>
+
+<h3>Why would I use this?</h3>
+
+<p>If you are doing any kind of voting or ranking based off a thumbs up or thumbs down logic, the best and most effective way to display the list of items in a relevant order is with this equation.</p>
+
+<h2>Installation</h2>
+
+<p><strong>Client Side:</strong></p>
+
+<pre>
+&lt;script src='wilson.js'&gt;&lt;/script&gt;
+</pre>
+
+<p><strong>Node.js:</strong></p>
+
+<div class="highlight">
+<pre><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">wilson</span><span class="p">.</span><span class="nx">js</span>
+</pre>
+</div>
+
+
+<pre>
+var wilson = require('wilson');
+</pre>
+
+<h2>Usage</h2>
+
+<p>For client side, the wilson object is now bound to the parent scope. Most of the time this will be <code>window.wilson</code></p>
+
+<div class="highlight">
+<pre><span class="kd">var</span> <span class="nx">scored</span><span class="p">,</span>
+    <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">name</span> <span class="o">:</span> <span class="s1">'Product 1'</span><span class="p">,</span>
+      <span class="nx">positive</span> <span class="o">:</span> <span class="mi">1337</span><span class="p">,</span>
+      <span class="nx">negative</span> <span class="o">:</span> <span class="mi">123</span>
+    <span class="p">};</span>
+
+<span class="nx">scored</span> <span class="o">=</span> <span class="nx">wilson</span><span class="p">.</span><span class="nx">score</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">    Output:</span>
+
+<span class="cm">    {</span>
+<span class="cm">        name : 'Product 1',</span>
+<span class="cm">        positive : 1337,</span>
+<span class="cm">        negative : 123,</span>
+<span class="cm">        score: 0.9003915795238371  // this is the score</span>
+<span class="cm">    }</span>
+<span class="cm">*/</span>
+</pre>
+</div>
+
+
+<h2>API</h2>
+
+<h3>score([obj, array])</h3>
+
+<p>Get the Wilson Score of an object or an array. Returns that object or array with score added.</p>
+
+<h3>sort(array)</h3>
+
+<p>Sort an array based on it's Wilson Score. If objects in array don't already have the score, it will be calculated and added.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/scottcorgan">scottcorgan</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
