@@ -20,7 +20,7 @@
             neg = obj.negative || 0;
         
         // Set the score
-        obj.score = _calculate(pos, neg);
+        !('score' in obj) && (obj.score = _calculate(pos, neg));
         
         // Add obj to new array with lower bounds
         scoreArr.push(obj);
@@ -72,7 +72,7 @@
     getSorted : function () {
       var arg = arguments[0],
           arr = this.getScore(arg);
-          
+      
       //
       return _sort(arr);
     }
