@@ -1,1 +1,1 @@
-module.exports = require('./wilson.js');
+module.exports = require('./wilson.js').wilson;
