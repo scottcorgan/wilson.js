@@ -52,8 +52,8 @@
     return arr.sort(_compare);
   };
   
-  // Set wilson into the current context
-  context.wilson = {
+  // Module api
+  var api = {
     
     // Get the lower bounds score of an object or array
     score : function () {
@@ -77,5 +77,13 @@
       return _sort(arr);
     }
   }
+  
+  // Available as a node.js module
+  if(typeof module !== 'undefined' && module.hasOwnProperty(exports)){
+    return (module.exports = api);
+  }
+  
+  // Return as set wilson to desired contect
+  return context.wilson = api;
 
 })(this);
