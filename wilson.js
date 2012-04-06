@@ -54,7 +54,7 @@
     },
     
     //
-    score : function(){
+    getScore : function(){
       var arg = arguments[0],
           func = function(){};
       
@@ -66,7 +66,7 @@
     },
     
     //
-    sortedByScore : function(){
+    sort : function(){
       
     }
     
