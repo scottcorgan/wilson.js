@@ -13,7 +13,7 @@
   "author": "Scott Corgan <scott@sevenly.org> (http://sevenly.org)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottcorgan/wilson.js"
+    "url": "git@github.com:scottcorgan/wilson.js.git"
   },
   "bugs": {
     "email": "scott@sevenly.org",
