@@ -1,5 +1,5 @@
 {
-  "name": "wilson",
+  "name": "wilson.js",
   "description": "Wrapper for the Wilson Score Equation to calculate rank based on positive and negative impressions.",
   "keywords": [
     "wilson",
