@@ -10,12 +10,20 @@ If you are doing any kind of voting or ranking based off a thumbs up or thumbs d
 
 ## Usage
 
-Include file:
+Client Side:
 <pre>
 &lt;script src='wilson.js'&gt;&lt;/script&gt;
 </pre>
 
-The wilson object is now bound to the parent scope. Most of the time this will be ` window.wilson `
+Node.js:
+
+```javascript
+var wilson = require('wilson');
+```
+
+### Usage
+For the client side, he wilson object is now bound to the parent scope. Most of the time this will be ` window.wilson `
+For Node.js this works as a normal module.
 
 ```javascript
 var scored,
