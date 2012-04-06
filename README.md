@@ -1,8 +1,9 @@
 # wilson.js
 
-Wrapper for the Wilson Score Equation to calculate rank based on positive and negative votes. (Lower bound of Wilson score confidence interval for a Bernoulli parameter)
+Wrapper for the Wilson Score Equation to calculate rank based on positive and negative votes.
 
-The goal with wilson.js was to provide reusable code for both the client and server using javascript.
+Based on [How Not To Sort By Average Rating](http://d.pr/ka8D)
+(Lower bound of Wilson score confidence interval for a Bernoulli parameter)
 
 ## Usage
 
