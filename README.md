@@ -8,7 +8,7 @@ Based on [How Not To Sort By Average Rating](http://d.pr/ka8D)
 ### Why would I use this?
 If you are doing any kind of voting or ranking based off a thumbs up or thumbs down logic, the best and most effective way to display the list of items in a relevant order is with this equation.
 
-## Usage
+## Installation
 
 **Client Side:**
 <pre>
@@ -18,9 +18,13 @@ If you are doing any kind of voting or ranking based off a thumbs up or thumbs d
 **Node.js:**
 
 ```javascript
-var wilson = require('wilson');
+npm install wilson.js
 ```
+<pre>
+var wilson = require('wilson');
+</pre>
 
+## Usage
 
 For client side, the wilson object is now bound to the parent scope. Most of the time this will be ` window.wilson `
 
