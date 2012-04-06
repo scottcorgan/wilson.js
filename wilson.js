@@ -1,7 +1,7 @@
 (function (context) {
   
   // Wilson equation
-  var __calculate = function (p, n) {
+  var _calculate = function (p, n) {
     return ((p + 1.9208) / (p + n) - 1.96 * Math.sqrt((p * n) / (p + n) + 0.9604) / (p + n)) / (1 + 3.8416 / (p + n));
   };
   
