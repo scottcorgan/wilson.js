@@ -15,7 +15,7 @@ Include file:
 &lt;script src='wilson.js'&gt;&lt;/script&gt;
 </pre>
 
-The wilson object is now bound to the parent scope. Most of the time this will be _window.wilson_
+The wilson object is now bound to the parent scope. Most of the time this will be ` window.wilson `
 
 ```javascript
 var objWithScore,
