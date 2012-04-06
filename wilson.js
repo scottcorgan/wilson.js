@@ -40,9 +40,16 @@
     return calculate(pos, neg);
   }
   
+  // Used to sort our array based on the lower pounds
+  var compare = function(a,b) {
+    if (a.lb < b.lb) return 11;
+    if (a.lb > b.lb) return -1;
+    return 0;
+  }
+  
   // Sort the array (helper function
   var sort = function(arr){
-    
+    return arr.sort(compare);
   }
   
   // Set wilson into the current context
@@ -66,8 +73,12 @@
     },
     
     //
-    sort : function(){
-      
+    getSorted : function(){
+      var arg = arguments[0],
+          arr = this.getScore(arg);
+          
+      //
+      return sort(arr);
     }
     
   }
