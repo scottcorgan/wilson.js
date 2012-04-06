@@ -18,14 +18,14 @@ Include file:
 The wilson object is now bound to the parent scope. Most of the time this will be ` window.wilson `
 
 ```javascript
-var objWithScore,
+var scored,
     obj = {
       name : 'Product 1',
       positive : 1337,
       negative : 123
     };
 
-objWithScore = wilson.getScore(obj);
+scored = wilson.score(obj);
 
 /*
     Output:
