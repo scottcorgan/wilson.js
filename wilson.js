@@ -8,7 +8,7 @@
   // Calculate lower bound based on passing an array of objects
   var _calcArr = function (arr) {
     var len = arr.length,
-        lbArr = [];
+        scoreArr = [];
     
     // Loop through array items and add lower bound
     // to the object in the array
@@ -19,16 +19,16 @@
             pos = obj.positive || 0,
             neg = obj.negative || 0;
         
-        // lb = 'Lower Bound'
-        obj.lb = _calculate(pos, neg);
+        // Set the score
+        obj.score = _calculate(pos, neg);
         
-        // add obj to new array with lower bounds
-        lbArr.push(obj);
+        // Add obj to new array with lower bounds
+        scoreArr.push(obj);
       })(len);
     }
     
     //
-    return lbArr;
+    return scoreArr;
   };
   
   // Calculate lower bound based on passing an object
@@ -42,8 +42,8 @@
   
   // Used to sort our array based on the lower pounds
   var _compare = function (a,b) {
-    if (a.lb < b.lb) return 1;
-    if (a.lb > b.lb) return -1;
+    if (a.score < b.score) return 1;
+    if (a.score > b.score) return -1;
     return 0;
   };
   
