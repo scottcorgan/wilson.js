@@ -5,6 +5,9 @@ Wrapper for the Wilson Score Equation to calculate rank based on positive and ne
 Based on [How Not To Sort By Average Rating](http://d.pr/ka8D)
 (Lower bound of Wilson score confidence interval for a Bernoulli parameter)
 
+### Why would I use this?
+If you are doing any kind of voting or ranking based off a thumbs up or thumbs down logic, the best and most effective way to display the list of items in a relevant order is with this equation.
+
 ## Usage
 
 Include file:
