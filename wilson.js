@@ -24,6 +24,13 @@ var wilson = (function(contenxt){
   return {
     
     getLowerBound : function(){
+      var arg = arguments[0];
+      
+      //
+      return calcObj(arg);
+    },
+    
+    score : function(){
       var arg = arguments[0],
           func = function(){};
       
