@@ -1,14 +1,11 @@
 {
   "name": "wilson.js",
-  "publishConfig": {
-    "proprietary-attribs": false
-  },
   "description": "Wrapper for the Wilson Score Equation to calculate rank based on positive and negative impressions.",
   "keywords": [
     "wilson",
-    "equation"
+    "equation",
     "rank",
-    "votes",
+    "votes"
   ],
   "version": "0.1.5",
   "preferGlobal": true,
