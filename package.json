@@ -1,22 +1,22 @@
 {
   "name": "wilson.js",
   "description": "Wrapper for the Wilson Score Equation to calculate rank based on positive and negative impressions.",
+  "main": "index.js",
   "keywords": [
     "wilson",
     "equation",
     "rank",
     "votes"
   ],
-  "version": "0.1.8",
-  "preferGlobal": false,
+  "version": "0.1.9",
   "homepage": "http://scottcorgan.github.com/wilson.js",
-  "author": "Scott Corgan <scott@sevenly.org> (http://sevenly.org)",
+  "author": "Scott Corgan <scottcorgan@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:scottcorgan/wilson.js.git"
   },
   "bugs": {
-    "email": "scott@sevenly.org",
+    "email": "scottcorgan@gmail.com",
     "url": "https://github.com/scottcorgan/wilson.js/issues"
   },
   "engines": {
